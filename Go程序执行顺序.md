@@ -36,5 +36,7 @@ main 函数只能用于 main 包中，且只能定义一个。
 6、如果 package 存在依赖，调用顺序为最后被依赖的最先被初始化，例如：导入顺序 main –> A –> B –> C，则初始化顺序为 C –> B –> A –> main，一次执行对应的 init 方法。    
   
 所有 init 函数都在同⼀个 goroutine 内执⾏。   
-所有 init 函数结束后才会执⾏ main.main 函数。  
+所有 init 函数结束后才会执⾏ main.main 函数。   
+
+[转载自:https://www.cnblogs.com/linguoguo/p/9378846.html](https://www.cnblogs.com/linguoguo/p/9378846.html)
 
